@@ -36,12 +36,9 @@ h3 {
 h2 {
     *text-align: center;
 }
-img {
-    border-radius: 5px;
-}
-img {
-    border: ;
-}
 img {clip-path: circle(100%);border-radius: 50%;background-origin: border-box;
 
+}
+main{
+    clip-path: view-box;border-radius: 50%;display: inline;
 }
