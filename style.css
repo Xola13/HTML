@@ -42,3 +42,9 @@ img {clip-path: circle(100%);border-radius: 50%;background-origin: border-box;
 main{
     clip-path: view-box;border-radius: 50%;display: inline;
 }
+}
+.container{
+  flex-direction: row;
+  display: flex;
+  border-image: space;
+}
