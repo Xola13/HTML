@@ -25,7 +25,12 @@ li a {
     text-decoration:none ;
 }
 body {
-    background-image: url("https://picsum.photos/1920");
+    background-image: url("https://picsum.photos/200/300");width: 100%;height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+              
+  }
 }
 img {
     border-radius: 10px;
