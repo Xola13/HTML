@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,40 +10,94 @@
 
     <style>
         nav a {
-        font-size: 24px;
+            font-size: 24px;
         }
-        a:hover{
-        color: rgb(15, 86, 114);
-    }
-    body{
-        background-image: url("https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif");
-    }
-            
+
+        a:hover {
+            color: rgb(15, 86, 114);
+        }
+
+        body {
+            background-image: url("https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif");
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit], input[type=reset] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .container {
+            background-color: transparent;
+        }
+        iframe{
+            padding-left: 575px;
+        }
     </style>
-    
+
+
 </head>
+
 <body>
 
 
-  <nav>
-      <ul>
-          <li><b><a href="index.html">home</a></b></li>
-          <li><b><a href="#">Contact</a></b></li>
-          <li><b><a href="about.html">about</a></b></li>
-          <li><b><a href=testimonials.html>testimonial</a></b></li>
-          <li><b><a href="timeline.html">timeline</a></b></li>
+    <nav>
+        <ul>
+            <li><b><a href="index.html">home</a></b></li>
+            <li><b><a href="#">Contact</a></b></li>
+            <li><b><a href="about.html">about</a></b></li>
+            <li><b><a href=testimonials.html>testimonial</a></b></li>
+            <li><b><a href="timeline.html">timeline</a></b></li>
 
-      </ul>
-  </nav> 
-  
-  <h1 style="font-size:50px;font-weight: bolder;vertical-align: middle;color: blueviolet;">Contact me below</h1> 
-  <h1 ><input type="text" id="First name" name="first name" placeholder="Enter fist name"><br><br><h1>
-  <h1><input type="text" id="last name" name="last name" placeholder="Enter last name"><br><br><h1>
-  <h1><input type="text" id="Email" name="Email Address" placeholder="Enter Email"><br><br><h1>
-  <h1><input type="numcber" id="contact number" name="contact number" placeholder="Enter contact number"><br><br><h1>
-  <textarea rows="5" id=Message name="Message" placeholder="Write Message"></textarea><br><br>
-  <input type="submit" value="submit">
-  <input type="reset" value="reset">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.29342152615!2d18.490473615694004!3d-33.98499628062439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bfcf832a1%3A0x3b4439b8cc517802!2s314%20Imam%20Haron%20Rd%2C%20Lansdowne%2C%20Cape%20Town%2C%207780!5e0!3m2!1sen!2sza!4v1633090420416!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </ul>
+    </nav>
+    <div class="container">
+        <form action="https.//formspree.io/f/xqkwjebr" method="post">
+            <h1 style="font-size:50px;font-weight: bolder;vertical-align: middle;color: blueviolet;">Contact me below</h1>
+            <input type="text" id="First name" name="first name" placeholder="Enter fist name"><br>
+    
+            <input type="text" id="last name" name="last name" placeholder="Enter last name"><br>
+    
+            <input type="text" id="Email" name="Email Address" placeholder="Enter Email"><br>
+    
+            <input type="text" id="contact number" name="contact_number" placeholder="Enter contact number"><br>
+    
+            <textarea rows="5" id=Message name="Message" placeholder="Write Message"></textarea>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+    
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.29342152615!2d18.490473615694004!3d-33.98499628062439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bfcf832a1%3A0x3b4439b8cc517802!2s314%20Imam%20Haron%20Rd%2C%20Lansdowne%2C%20Cape%20Town%2C%207780!5e0!3m2!1sen!2sza!4v1633090420416!5m2!1sen!2sza"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </body>
+
 </html>
