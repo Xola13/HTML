@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
   <link rel="stylesheet" href="style3.css">
 
@@ -27,18 +28,20 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background-image: url("http://alliswall.com/file/1571/1920x1200/16:9/amazing-forest.jpg");
-      padding-left: 90px;
-      margin-left: 20px;
+      padding-left: 0px;
+      margin-left: 0px;
       text-align: center;
-      margin-top: 200px;
+      /* margin-top: 200px; */
       padding-right: 300px;
+      margin-top: 0px;
+     margin-bottom: 0px;
 
     }
 
     .flip-card {
       background-color: transparent;
-      width: 500px;
-      height: 500px;
+      width: 400px;
+      height: 400px;
       perspective: 1000px;
       display: inline-block;
 
@@ -79,23 +82,61 @@
       color: rgb(188, 240, 233);
       transform: rotateY(180deg);
     }
-    nav {
+    /* nav {
       position: fixed;
       top: 0%;
       left: 0%;
       width: 100%;
-    }
-    nav a {
+    } */
+    /* nav a {
       font-size: 24px;
-    }
+    } */
     a:hover{
         color: rgb(15, 86, 114);
     }
+    .grid-container { 
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    /*@media screen and (max-width: 700px) {
+     .grid-container{
+       display: grid;
+       grid-template-columns: auto;
+       grid-row-gap: 100px;
+     }
+     .grid-item {*/
+      
+     
+    
   </style>
 </head>
-
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+</script>
 <body>
-  <nav>
+  <div class="topnav" id="myTopnav">
+    <li><b><a href="index.html">home</a></b></li>
+    <li><b></b><a href="contact.html">contact</a></b></li>
+    <li><b></b><a href="about.html">about</a></b></li>
+    <li><b></b><a href="#" class="active">testimonial</a></b></li>
+    <li><b></b><a href="timeline.html">timeline</a></b></li>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <!-- <nav>
     <ul>
       <li><b><a href="index.html">home</a></b></li>
       <li><b><a href="contact.html">contact</a></b></li>
@@ -103,16 +144,17 @@
       <li><b><a href="#">Testimonial</a></b></li>
       <li><b><a href="timeline.html">timeline</a></b></li>
     </ul>
-  </nav>
+  </nav> -->
 
   <h1 style="font-size: 100px; color:rgba(123, 231, 208, 0.37);">Testimonials</h1>
+<!--flip cards-->
 
 <div class="grid-container">
   <div class="grid-item">
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="index.jpeg" alt="xola" style="width:500px;height:500px;">
+        <img src="index.jpeg" alt="xola" style="width:400px;height:400px;">
       </div>
       <div class="flip-card-back">
         <h1>Xola Magatya</h1>
@@ -122,14 +164,13 @@
     </div>
   </div>
   </div>
-
-  <!--flip card-->
+<!--flip cards-->
 
   <div class="grid-item">
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="Bulela.jpeg" alt="Bulela" style="width:500px;height:500px;">
+        <img src="Bulela.jpeg" alt="Bulela" style="width:400px;height:400px;">
       </div>
       <div class="flip-card-back">
         <h1>Bulela Gomoshe</h1>
@@ -145,7 +186,7 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="emmanuel.jpeg" alt="Emmanuel" style="width:500px;height:500px;">
+        <img src="emmanuel.jpeg" alt="Emmanuel" style="width:400px;height:400px;">
       </div>
       <div class="flip-card-back">
         <h1>Emmanuel Fente</h1>
@@ -161,7 +202,7 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="jude.jpeg" alt="jude" style="width:500px;height:500px;">
+        <img src="jude.jpeg" alt="jude" style="width:400px;height:400px;">
       </div>
       <div class="flip-card-back">
         <h1>Jude Julius</h1>
@@ -177,7 +218,7 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="Kagiso.jpeg" alt="Kagiso" style="width:500px;height:500px;">
+        <img src="Kagiso.jpeg" alt="Kagiso" style="width:400px;height:400px;">
       </div>
       <div class="flip-card-back">
         <h1>Kagiso Mphayi</h1>
@@ -193,7 +234,7 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="Jamie-Lee.jpg" alt="Jamie" style="width:500px;height:500px;">
+        <img src="Jamie-Lee.jpg" alt="Jamie" style="width:400px;height:400px;">
       </div>
       <div class="flip-card-back">
         <h1>Jamie-Lee Kinnear</h1>

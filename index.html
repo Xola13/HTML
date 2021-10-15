@@ -1,77 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
 <style>
-    
     div {
-        border:1px solid chocolate;
+        /* border: 1px solid chocolate; */
         padding-top: 30px;
         padding-left: 15px;
         padding-bottom: 30px;
         padding-right: 15px;
+        
+    }
+    h2 {
+        color: wheat;
     }
 
+    ul {
+        color: black;
+    }
 
-ul{
-    color:black;
-}
-
-    a:hover{
+    a:hover {
         color: rgb(15, 86, 114);
     }
-    li{
+
+    li {
         display: inline;
     }
-    
-    nav a{
-    font-size: 24px;
+
+    nav a {
+        font-size: 24px;
+    }
+
+    h1:hover {
+        color: rgb(199, 53, 53);
+    }
+
+    img {
+        margin:6px ;
+        float:left;
+
+    }
+
+    body {
+        background-image: url("https://cdn.lowgif.com/full/6a18d06132677e25-blockchain-the-transforming-technology-and-its-applications-20108.gif");
+    }
+
+   /* img {
+        float: left;
+    }
+
+    @media only screen and (max-width:400px) {
+        body {
+            background-color: lightblue;
         }
-   h1:hover {
-    color: rgb(199, 53, 53);
-  }
-  img{
-      margin-left: 600px;
-  }
-  body{
-      background-image: url("https://cdn.lowgif.com/full/6a18d06132677e25-blockchain-the-transforming-technology-and-its-applications-20108.gif");
-  }
 
+        img {
+            float: none;
+        }
+    }*/
 </style>
+
 <body>
+    <div class="topnav" id="myTopnav">
+        <li><b><a href="#" class="active">Home</a></b></li>
+        <li><b></b><a href="contact.html">contact</a></b></li>
+        <li><b></b><a href="about.html">about</a></b></li>
+        <li><b></b><a href="testimonials.html">testimonial</a></b></li>
+        <li><b></b><a href="timeline.html">timeline</a></b></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
-   <nav>
-       <ul>
-       <li><b><a href="#">Home</a></b></li>
-       <li><b><a href="contact.html">contact</a></b></li>
-        <li><b><a href="about.html">about</a></b></li>
-        <li><b><a href="testimonials.html">testimonial</a></b></li>
-        <li><b><a href="timeline.html">timeline</a></b></li>
+    <img src="index.jpeg" alt="My photo" border-radius=50%; width="500" height="500" class="img."><br>
+    <main>
+        <section class="landing-page">
+            <div class="container">
 
-   </ul>
-</nav>
+                <div class="typing" id="typing">
+                    <h1 style>Hello,</h1>
+                    <h2>I am Xola Magatya.</h2>
+                    <h3>
+                        Welcome to the portfolio,
+                        of an aspiring developer.
+                    </h3>
+                    <p>
+                        A web designer with experience in both <span>Front-end</span> and <span>Back-end</span>
+                        developing.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-6">
+                    <img src="asserts/images/landing (1).png" alt="">
+                </div>
 
-
-<h1 style="color: rgba(114, 58, 245, 0.452);font-weight: bolder; font-style: oblique;font-stretch: wider; font-size: 50px;"><strong> XOLA MAGATYA </strong></h1><br>
-   
-<img src="index.jpeg" alt="My photo" border-radius= 50%; width="500" height="500" class="img"><br>
-
-<h2 style="color: burlywood;font-weight: bolder;font-style: oblique;font-stretch: wider;font-size: 35px;">Welcome to my portfolio..<br><br> I'm an Aspiring Front-End & Back-End Web Developer</h2>
-<table border="1" width="70%">
-    <tr>
-        <th style="color: rgb(166, 148, 245); font-size: 25px;">Name</th>
-        <th style="color:rgb(166, 148, 245);font-size: 25px;">contact</th>
-        </tr>
-        <tr>
-            <td style="font-size: 25px;color: rgb(166, 148, 245);">Xola Magatya</td>
-            <td style="font-size: 25px;color: rgb(166, 148, 245);">0672155531</td>
-    </tr>
-</table>
-</style>
+            </div>       
+    </style>
 </body>
+
 </html>

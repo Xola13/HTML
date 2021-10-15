@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
-        nav a {
+        /* nav a {
         font-size: 24px;
             }
         a:hover{
         color: rgb(15, 86, 114);      
-    }
+    } */
     body{
         background-image:url("https://www.ppt-backgrounds.net/thumbs/hd-desktop-technology-for-wallpaper-presentation.jpeg");
     }
@@ -21,9 +22,29 @@
     </style>
     
 </head>
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
 <body>
- 
-<nav>
+    <div class="topnav" id="myTopnav">
+        <li><b><a href="index.html">home</a></b></li>
+        <li><b></b><a href="contact.html">contact</a></b></li>
+        <li><b></b><a href="#" class="active">About</a></b></li>
+        <li><b></b><a href="testimonials.html">testimonial</a></b></li>
+        <li><b></b><a href="timeline.html">timeline</a></b></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+<!-- <nav>
     <ul>
         <li><b><a href="index.html">home</a></b></li>
         <li><b><a href="contact.html">contact</a></b></li>
@@ -31,7 +52,7 @@
         <li><b><a href=testimonials.html>testimonial</a></b></li>
         <li><b><a href="timeline.html">timeline</a></b></li>
     </ul>
-</nav> 
+</nav>  -->
 <h1 style="font-size: 60px;color:rgb(191, 246, 246)">About Me</h1><br><br><br>
 <h1><strong>I am <span style="color: cornflowerblue;font-weight: bolder;">Xola Magatya</span>, the <span style="color: cornflowerblue;font-weight: bolder;">Front-End Developer</h1><br><br>
 <p><h2 style="color: cornsilk;">I have gained some skills experience in the past 2 weeks of coding with the Life choices academy. I enjoy what I do and my goal is to be the best in the field and to make every task that i'm given a success</h3></p><br>
